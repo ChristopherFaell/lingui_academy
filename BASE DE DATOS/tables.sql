@@ -1,5 +1,7 @@
 use lingui_academy;
 
+/*INDEPENDIENTES*/
+
 CREATE TABLE document_type (
 	id BIGINT UNSIGNED auto_increment NOT NULL,
 	name varchar(255) NOT NULL,
@@ -70,14 +72,6 @@ CREATE TABLE house (
 	CONSTRAINT idx_house_pk PRIMARY KEY (id)
 );
 
-CREATE TABLE classroom (
-	id BIGINT UNSIGNED auto_increment NOT NULL,
-	name varchar(255) NOT NULL,
-	capacity BIGINT UNSIGNED NOT NULL,
-	house_id BIGINT UNSIGNED NOT NULL,
-	CONSTRAINT idx_classroom_pk PRIMARY KEY (id),
-	CONSTRAINT idx_classroom_house_id_FK FOREIGN KEY (house_id) REFERENCES lingui_academy.house(id)
-);
 
 CREATE TABLE permission (
 	id BIGINT UNSIGNED auto_increment NOT NULL,
@@ -232,4 +226,13 @@ CREATE TABLE role_permission_item (
 	CONSTRAINT idx_role_permission_item_role_id_FK FOREIGN KEY (role_id) REFERENCES lingui_academy.`role`(id),
 	CONSTRAINT idx_role_permission_item_permission_id_FK FOREIGN KEY (permission_id) REFERENCES lingui_academy.permission(id),
 	CONSTRAINT idx_role_permission_item_item_id_FK FOREIGN KEY (item_id) REFERENCES lingui_academy.item(id)
-)
+);
+
+CREATE TABLE classroom (
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+	name varchar(255) NOT NULL,
+	capacity BIGINT UNSIGNED NOT NULL,
+	house_id BIGINT UNSIGNED NOT NULL,
+	CONSTRAINT idx_classroom_pk PRIMARY KEY (id),
+	CONSTRAINT idx_classroom_house_id_FK FOREIGN KEY (house_id) REFERENCES lingui_academy.house(id)
+);
