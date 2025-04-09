@@ -1,0 +1,39 @@
+Endpoint o Path: localhost:3000/api/v1/signin 
+Method: POST 
+ 
+Request Data: Json {  
+    "name": "string | min(3) | maxLength(32)", 
+    "lastName": " string | min(3) | maxLength(32)", 
+    "email": "string | email", 
+    "phoneNumber": "string | mobile |min(10) | max(10)", 
+    "password":"string | min(8) | max(32) | confirmed(confirmPassword)", 
+    "confirmPassword": "string | min(8) | max(32)" 
+} 
+ 
+Responses: 
+ 
+    Status: 201 (Created):  
+        Data: { 
+            "message": "Usuario registrado exitosamente" 
+        } 
+ 
+	Status: 400 (Bad Request): (uso de la libreria para el mensaje) 
+        Data: { 
+            "message": "Error en el registro" 
+        } 
+ 
+	Status: 409 (Conflict) 
+        Data: { 
+            "message": "El email ya se encuentra registrado" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+

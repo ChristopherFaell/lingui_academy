@@ -1,0 +1,45 @@
+Endpoint o Path: localhost:3000/api/v1/agenda 
+Method: DELETE 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+
+Request Data: Json { 
+    "classroom_session":number|required|positive|withoutDecimals, 
+} 
+
+Request Data: Json { 
+    "classroom_session": 2041, 
+} 
+
+Responses: 
+
+Status: 200 (Ok):  
+    Data: { 
+        "message": " Clase eliminada exitosamente " 
+    } 
+
+Status: 204 (Not Content):  
+    Data: { 
+        "message": " No existen clases agendadas " 
+    } 
+
+Status: 400 (Bad Request):  
+    Data: { 
+        "message": " Error al eliminar la clase " 
+    } 
+
+Status: 404 (Not Found) 
+    Data: { 
+        "message": " La clase no se encuentra registrada." 
+    } 
+
+Status: 500 (Internal Server Error): 
+    Data: { 
+        "message": "Error en el servidor, intente más tarde." 
+    } 
+
+Status: 503 (Service Unavailable):  
+    Data: { 
+        "message": "Servidor en mantenimiento" 
+    } 

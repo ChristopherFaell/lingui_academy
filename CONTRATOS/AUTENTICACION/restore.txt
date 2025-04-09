@@ -1,0 +1,66 @@
+Endpoint o Path: localhost:3000/api/v1/restore 
+Method: POST 
+ 
+Request Data: Json {  
+    "email": "string | email"  
+} 
+ 
+Responses: 
+ 
+	Status: 200 (Ok):  
+        Data: { 
+            "message": "Correo para restaurar contraseña enviado" 
+        } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": "El correo no se encuentra registrado" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+ 
+ 
+ 
+Endpoint o Path: localhost:3000/api/v1/restore-password 
+Method: POST 
+ 
+Request Data: Json {  
+  "new_password": "string|min(8)|max(32)|confirmed(confirm_"password)", 
+  "confirm_password": "string|min(8)|max(32)" 
+} 
+ 
+Responses: 
+ 
+	Status: 200 (Ok):  
+        Data: { 
+            "message": "La contraseña ha sido restablecida exitosamente."  
+        } 
+ 
+	Status: 302 (Found):  
+        Data: { 
+            "message": " La URL ha sido cambiada temporalmente " 
+        } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": "Las contraseñas no coinciden" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+

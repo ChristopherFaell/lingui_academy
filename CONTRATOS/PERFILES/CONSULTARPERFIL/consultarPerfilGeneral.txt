@@ -1,0 +1,31 @@
+Endpoint o Path: localhost:3000/api/v1/perfil/:id
+
+Method: GET
+    Request Data: 
+      ID: Path params
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: { 
+                "image": "string" //Qué tipo de dato es la imagen
+                "name": "string", 
+                "lastName": "string",
+                "birthDate": date,
+                "email": "string|email",
+                "phoneNumber": "string"
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": " Insertar información correspondiente en la casilla estipulada" 
+            } 
+
+        Status: 401 (Unauthorized): (gestion a nivel global) 
+            Data: { 
+                "message": "Usuario y contraseña incorrecta" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

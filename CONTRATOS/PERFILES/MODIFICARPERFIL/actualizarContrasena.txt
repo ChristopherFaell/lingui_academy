@@ -1,0 +1,35 @@
+Endpoint o Path: localhost:3000/api/v1/perfil/:id
+
+Method: PATCH
+    Request Data: 
+            json { 
+                "password": "string", // Qué validaciones se requieren para la contraseña actual?
+                "newPassword": "string|min(8)|max(32)|confirmed(confirmNewPassword)",
+                "confirmNewPassword": "string|min(8)|max(32)",
+            }
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: { 
+                "message": "Se modificó lainformación de forma correcta."
+            }
+
+         Status: 304 (Not Modified):  
+            Data: { 
+                "message": "No se pudo modificar la información" 
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": " Insertar información correspondiente en la casilla estipulada" 
+            } 
+
+        Status: 401 (Unauthorized): (gestion a nivel global) 
+            Data: { 
+                "message": "Usuario y contraseña incorrecta" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

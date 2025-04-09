@@ -1,0 +1,50 @@
+Endpoint o Path: localhost:3000/api/v1/report/student 
+Method: GET 
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+ 
+RequestData: json { 
+    "code": number, 
+    "name": "string", 
+    "last_name": "string", 
+    "level ": "string", 
+    "language": "string",
+    "status": "string", 
+    "classes enrolled": number, 
+    "attendance": number, 
+    "class hours": number,  
+} 
+ 
+Response:  
+ 
+	Status: 200 (Ok):  
+        Data: json { 
+        "code": number , 
+        "name": "string", 
+        "last_name": "string", 
+        "level ": "string",
+        "language": "string",
+        "status": "string", 
+        "classes enrolled": number, 
+        "attendance": number, 
+        "class hours": number, 
+    } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": " Error al obtener el reporte" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+ 
+

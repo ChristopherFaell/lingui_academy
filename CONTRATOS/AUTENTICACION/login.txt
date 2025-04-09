@@ -1,0 +1,46 @@
+Endpoint o Path: localhost:3000/api/v1/auth/login    //Marcar versiones (V1) 
+
+Method: POST 
+    Request Data: Json { 
+        "email": { 
+            "string|email" 
+        } 
+
+        "password": { 
+            "string|minLength(8)|maxLength(32)|confirmed" 
+        } 
+    }
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: { 
+                 "message": "Autenticación exitosa", 
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...", 
+                 "user": { 
+                "id": 123, 
+                "name": "Nombre del usuario", 
+                "email": "usuario@example.com" 
+            } 
+        } 
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": " Insertar información correspondiente en la casilla estipulada" 
+            } 
+
+        Status: 401 (Unauthorized): (gestion a nivel global) 
+            Data: { 
+                "message": "Usuario y contraseña incorrecta" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 
+
+ 
+
+    Status: 503 (Service Unavailable): (entra ^_^ al 500) 
+            Data: { 
+                "message": "Servidor en mantenimiento" 
+            } 

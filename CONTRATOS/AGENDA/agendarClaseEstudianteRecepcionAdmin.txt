@@ -1,0 +1,60 @@
+Endpoint o Path: localhost:3000/api/v1/agenda 
+
+Method: POST 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+
+Request Data: Json { 
+    "student": "string | required", 
+    "classroom_session": number | required | positive | withoutDecimals, 
+} 
+
+Request Data: Json { 
+    "student": "Dyledinson Rozamargo", 
+    "classroom_session": 2041, 
+} 
+
+Responses: 
+
+Status: 201 (Created):  
+    Data: { 
+        "message": " Clase agendada exitosamente para el estudiante. " 
+    } 
+
+Status: 204 (Not Content):  
+    Data: { 
+        "message": " No existen clases agendadas " 
+    } 
+
+Status: 400 (Bad Request):  
+    Data: { 
+        "message": " Error al agendar la clase. Verifique los datos suministrados. " 
+    } 
+
+Status: 404 (Not Found) 
+    Data: { 
+        "message": " La clase o el estudiante no se encuentran registrados." 
+    } 
+
+Status: 409 (Conflict) 
+    Data: { 
+        "message": " El estudiante ya se encuentra inscrito en esta clase. " 
+    } 
+
+ 
+
+Status: 409 (Conflict) 
+    Data: { 
+        "message": " No hay cupos disponibles para esta clase" 
+    } 
+
+Status: 500 (Internal Server Error): 
+    Data: { 
+        "message": "Error en el servidor, intente más tarde." 
+    } 
+
+Status: 503 (Service Unavailable):  
+    Data: { 
+        "message": "Servidor en mantenimiento" 
+    } 

@@ -1,0 +1,37 @@
+Endpoint o Path: localhost:3000/api/v1/avance 
+Method: GET 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+}
+
+RequestData: json { 
+    "name": "string" | Required, 
+} 
+
+Response:  
+
+Status: 200 (Ok): 
+Data: json { 
+    "level": "string", 
+    "unit": "string", 
+    "component": "string" 
+    "comentarios": { 
+        "name": "string", 
+        "comment": "string" 
+    } 
+} 
+
+Status: 400 (Bad Request):  
+Data: { 
+    "message": " Error al consultar el avance" 
+} 
+
+Status: 500 (Internal Server Error): 
+Data: { 
+    "message": "Error en el servidor, intente más tarde" 
+} 
+
+Status: 503 (Service Unavailable):  
+Data: { 
+    "message": "Servidor en mantenimiento" 
+} 
