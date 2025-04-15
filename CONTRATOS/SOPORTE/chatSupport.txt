@@ -1,4 +1,4 @@
-Endpoint o Path: localhost:3000/api/v1/report/teacher
+Endpoint o Path: localhost:3000/api/v1/support
 Method: GET 
  
 Header : { 
@@ -12,11 +12,10 @@ Response:
  
 	Status: 200 (Ok):  
         Data: json { 
-            "date_time": date, 
-            "class_code_session": number,
-            "level": "string",
-            "modality": "string",
-            "duration": number,
+            "name": "string", 
+            "language": "string",
+            "assigned_class": number,
+            "done_class": number, 
         } 
  
 	Status: 400 (Bad Request):  

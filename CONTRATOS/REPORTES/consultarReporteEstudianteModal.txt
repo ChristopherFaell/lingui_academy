@@ -12,16 +12,13 @@ Response:
  
 	Status: 200 (Ok):  
         Data: json { 
-        "code": number , 
-        "name": "string", 
-        "last_name": "string", 
-        "level ": "string",
-        "language": "string",
-        "status": "string", 
-        "classes enrolled": number, 
-        "attendance": number, 
-        "class hours": number, 
-    } 
+            "date_time": date, 
+            "class_code_session": number, //el nombre del codigo clase tiene que ser el mismo que en la base de datos? 
+            "level ": "string",
+            "modality": "string",
+            "duration": number, 
+            "attendance": "string", // que tipo es el valor. 
+        } 
  
 	Status: 400 (Bad Request):  
         Data: { 

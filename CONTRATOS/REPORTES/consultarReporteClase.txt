@@ -1,0 +1,37 @@
+Endpoint o Path: localhost:3000/api/v1/report/classroom
+Method: GET 
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+ 
+RequestData: 
+    CODE/ Query Params
+ 
+Response:  
+ 
+	Status: 200 (Ok):  
+        Data: json { 
+            "name": "string", 
+            "modality": "string", 
+            "capacity": number, 
+            "programmed_classroom": number,
+            "done_class": number,
+        } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": " Error al obtener el reporte" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+ 
+

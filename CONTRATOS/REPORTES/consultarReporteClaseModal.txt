@@ -1,0 +1,37 @@
+Endpoint o Path: localhost:3000/api/v1/report/classroom=name
+Method: GET 
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+ 
+RequestData: 
+    CODE/ Query Params
+ 
+Response:  
+ 
+	Status: 200 (Ok):  
+        Data: json { 
+            "date_time": date, 
+            "classroom_code": number, // en la base de datos seria classroom ya que seria el id del salon
+            "class_type": "string", 
+            "duration": number,
+            "house": "string"
+        } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": " Error al obtener el reporte" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+ 
+

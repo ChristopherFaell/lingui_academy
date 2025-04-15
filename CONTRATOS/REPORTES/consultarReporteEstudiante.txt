@@ -5,32 +5,23 @@ Header : {
     Authorization: "bearer fake(caracteres del token) 
 } 
  
-RequestData: json { 
-    "code": number, 
-    "name": "string", 
-    "last_name": "string", 
-    "level ": "string", 
-    "language": "string",
-    "status": "string", 
-    "classes enrolled": number, 
-    "attendance": number, 
-    "class hours": number,  
-} 
+RequestData: 
+    CODE/ Query Params
  
 Response:  
  
 	Status: 200 (Ok):  
         Data: json { 
-        "code": number , 
-        "name": "string", 
-        "last_name": "string", 
-        "level ": "string",
-        "language": "string",
-        "status": "string", 
-        "classes enrolled": number, 
-        "attendance": number, 
-        "class hours": number, 
-    } 
+            "code": number , 
+            "name": "string", 
+            "last_name": "string", 
+            "level ": "string",
+            "language": "string",
+            "status": "string", 
+            "classes enrolled": number, 
+            "attendance": number, 
+            "class hours": number, 
+        } 
  
 	Status: 400 (Bad Request):  
         Data: { 

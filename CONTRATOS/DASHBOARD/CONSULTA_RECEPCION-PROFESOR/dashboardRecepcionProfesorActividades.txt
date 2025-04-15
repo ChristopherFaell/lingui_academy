@@ -1,4 +1,4 @@
-Endpoint o Path: localhost:3000/api/v1/report/teacher
+Endpoint o Path: localhost:3000/api/v1/dashboard/task
 Method: GET 
  
 Header : { 
@@ -12,16 +12,14 @@ Response:
  
 	Status: 200 (Ok):  
         Data: json { 
-            "date_time": date, 
-            "class_code_session": number,
-            "level": "string",
-            "modality": "string",
-            "duration": number,
+            "name": "string",
+            "description": "string",
+            "date_time": date
         } 
  
 	Status: 400 (Bad Request):  
         Data: { 
-            "message": " Error al obtener el reporte" 
+            "message": " Error al obtener la información" 
         } 
  
 	Status: 500 (Internal Server Error): 
