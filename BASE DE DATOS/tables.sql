@@ -215,7 +215,7 @@ CREATE TABLE classroom (
 	capacity BIGINT UNSIGNED NOT NULL,
 	house_id BIGINT UNSIGNED NOT NULL,
 	CONSTRAINT idx_classroom_pk PRIMARY KEY (id),
-	CONSTRAINT idx_classroom_house_id_FK FOREIG	N KEY (house_id) REFERENCES lingui_academy.house(id)
+	CONSTRAINT idx_classroom_house_id_FK FOREIGN KEY (house_id) REFERENCES lingui_academy.house(id)
 );
 
 CREATE TABLE classroom_session (
