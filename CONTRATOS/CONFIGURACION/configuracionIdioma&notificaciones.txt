@@ -1,0 +1,35 @@
+Endpoint o Path: localhost:3000/api/v1/settings
+
+Method: PATCH
+
+     Request Data: 
+            json { 
+                "language": "string",
+                "notificaciones": "string"
+            }
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: { 
+                "message": "Se modificó el idioma y notificaciones de forma correcta."
+            }
+
+         Status: 304 (Not Modified):  
+            Data: { 
+                "message": "No se pudo modificar el idiomas y notificsciones" 
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": "Elegir información requerida o seleccionar por defecto" 
+            } 
+
+        Status: 401 (Unauthorized): (gestion a nivel global) 
+            Data: { 
+                "message": "Usuario y contraseña incorrecta" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

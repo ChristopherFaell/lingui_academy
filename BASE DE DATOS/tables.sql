@@ -85,6 +85,12 @@ CREATE TABLE status (
 	CONSTRAINT idx_status_pk PRIMARY KEY (id)
 );
 
+CREATE TABLE dashboard_component (
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+	name varchar(255) NOT NULL,
+	CONSTRAINT idx_dashboard_component_pk PRIMARY KEY (id)
+);
+
 /*DEPENDIENTES*/
 
 CREATE TABLE user (
@@ -209,7 +215,7 @@ CREATE TABLE classroom (
 	capacity BIGINT UNSIGNED NOT NULL,
 	house_id BIGINT UNSIGNED NOT NULL,
 	CONSTRAINT idx_classroom_pk PRIMARY KEY (id),
-	CONSTRAINT idx_classroom_house_id_FK FOREIGN KEY (house_id) REFERENCES lingui_academy.house(id)
+	CONSTRAINT idx_classroom_house_id_FK FOREIG	N KEY (house_id) REFERENCES lingui_academy.house(id)
 );
 
 CREATE TABLE classroom_session (
@@ -221,8 +227,8 @@ CREATE TABLE classroom_session (
 	component_id BIGINT UNSIGNED DEFAULT NULL NULL,
 	teacher_user_language_id BIGINT UNSIGNED NOT NULL,
 	class_type_id BIGINT UNSIGNED NOT NULL,
-	start_date_time DATETIME NOT NULL,
-	end_date_time DATETIME NOT NULL,
+	start_date DATETIME NOT NULL,
+	end_date DATETIME NOT NULL,
 	duration_hour BIGINT UNSIGNED NOT NULL,
 	CONSTRAINT idx_classroom_session_pk PRIMARY KEY (id),
 	CONSTRAINT idx_classroom_session_classroom_id_FK FOREIGN KEY (classroom_id) REFERENCES lingui_academy.classroom(id),
@@ -241,4 +247,13 @@ CREATE TABLE student_attendance (
 	CONSTRAINT idx_student_attendance_pk PRIMARY KEY (id),
 	CONSTRAINT idx_student_attendance_student_id_FK FOREIGN KEY (student_id) REFERENCES lingui_academy.student(id),
 	CONSTRAINT idx_student_attendance_classroom_information_id_FK FOREIGN KEY (classroom_session_id) REFERENCES lingui_academy.classroom_session(id)
+);
+
+CREATE TABLE role_dashboard_component (
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+	role_id BIGINT UNSIGNED NOT NULL,
+	dashboard_component_id BIGINT UNSIGNED NOT NULL,
+	CONSTRAINT idx_role_dashboard_component_pk PRIMARY KEY (id),
+	CONSTRAINT idx_role_dashboard_component_role_id_FK FOREIGN KEY (role_id) REFERENCES lingui_academy.`role`(id),
+	CONSTRAINT idx_role_dashboard_component_dashboard_component_id_FK FOREIGN KEY (dashboard_component_id) REFERENCES lingui_academy.dashboard_component(id)
 );

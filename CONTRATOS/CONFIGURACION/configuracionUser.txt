@@ -1,0 +1,37 @@
+Endpoint o Path: localhost:3000/api/v1/settings
+Method: GET 
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+ 
+RequestData: 
+    CODE/ Query Params
+ 
+Response:  
+ 
+	Status: 200 (Ok):  
+        Data: json {
+            "crear_usuario": "string",
+            "nombre": "string", 
+            "correo": "string",
+            "tipo_usuario": number,
+            "opciones": number, 
+        } 
+ 
+	Status: 400 (Bad Request):  
+        Data: { 
+            "message": " Error al ingresar a configuración" 
+        } 
+ 
+	Status: 500 (Internal Server Error): 
+        Data: { 
+            "message": "Error en el servidor, intente más tarde" 
+        } 
+ 
+	Status: 503 (Service Unavailable):  
+        Data: { 
+            "message": "Servidor en mantenimiento" 
+        } 
+ 
+

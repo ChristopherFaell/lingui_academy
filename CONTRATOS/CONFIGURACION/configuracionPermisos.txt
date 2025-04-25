@@ -1,0 +1,46 @@
+Endpoint o Path: localhost:3000/api/v1/settings/:rol=0000
+
+Method: PATCH
+    Request Data: 
+           queryParmas
+
+     Request Data: 
+            json { 
+                "dashboard": {
+                    "verDashboard": boolean
+                },
+                "agenda": {
+                    "crearClase": boolean,
+                    "informacionClase": boolean,
+                    "listaEstudiantes": boolean,
+                    "informacionDocente": boolean,
+                    "recomendaciones": boolean,
+                },
+                "miPerfil": "string"
+            }
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: { 
+                "message": "Se modificaron los permisos de forma correcta."
+            }
+
+         Status: 304 (Not Modified):  
+            Data: { 
+                "message": "No se pudo modificar los permisos" 
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": "Marcar información en la casilla correspondiente" 
+            } 
+
+        Status: 401 (Unauthorized): (gestion a nivel global) 
+            Data: { 
+                "message": "Usuario y contraseña incorrecta" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

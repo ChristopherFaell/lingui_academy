@@ -11,3 +11,6 @@ La primera fase del proyecto se centra en el levantamiento de requerimientos, un
 
 ## Metodología
 Se han realizado dos entrevistas con los Stakeholders para recopilar información detallada, la cual servirá como punto de partida para las siguientes etapas del proyecto.
+
+## Mockups del Proyecto
+Puedes acceder a los mockups del proyecto a través del siguiente enlace: [Mockups del Proyecto](https://www.canva.com/design/DAGQTz5yORs/_3Ec1qMn7J1JMDtVpI_crw/edit?utm_content=DAGQTz5yORs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)

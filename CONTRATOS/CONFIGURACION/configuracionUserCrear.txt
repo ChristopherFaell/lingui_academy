@@ -1,0 +1,40 @@
+Endpoint o Path: localhost:3000/api/v1/crear-usuario
+
+Method: POST  
+Header: {  
+    Authorization: "bearer fake(caracteres del token)"  
+}  
+     
+Request Data: Json {  
+    "name": "string",
+    "last_name": "string",
+    "document_type": "string",
+    "document_number": number,
+    "email": "string",
+    "rol": "string",
+    "contract_type": "string",
+    "workday": "string"
+}  
+
+     
+Responses: 
+
+Status: 201 (Created):  
+    Data: { 
+        "message": "Usuario creado exitosamente" 
+    } 
+
+Status: 400 (Bad Request):  
+    Data: { 
+        "message": " Error al crear el usuario" 
+    } 
+
+Status: 500 (Internal Server Error): 
+    Data: { 
+        "message": "Error en el servidor, intente más tarde" 
+    } 
+
+Status: 503 (Service Unavailable):  
+    Data: { 
+        "message": "Servidor en mantenimiento" 
+    } 
