@@ -1,0 +1,31 @@
+Endpoint o Path: localhost:3000/api/v1/settings
+
+Method: PATCH
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+
+     Request Data: 
+           "id": number,
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: {
+                "message": "Usuario suspendido exitosamente"
+            }
+
+         Status: 304 (Not Modified):  
+            Data: { 
+                "message": "No se pudo suspender el usuario" 
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": "Elegir información requerida o seleccionar por defecto" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

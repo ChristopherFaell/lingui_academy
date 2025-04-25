@@ -1,22 +1,27 @@
 Endpoint o Path: localhost:3000/api/v1/settings/:rol=0000
 
 Method: PATCH
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+
     Request Data: 
            queryParmas
 
      Request Data: 
             json { 
-                "dashboard": {
-                    "verDashboard": boolean
+                "view_dashboard": {
+                    "dashboard": boolean
                 },
-                "agenda": {
-                    "crearClase": boolean,
-                    "informacionClase": boolean,
-                    "listaEstudiantes": boolean,
-                    "informacionDocente": boolean,
-                    "recomendaciones": boolean,
+                "view_agenda": {
+                    "class": boolean,
+                    "class_session": boolean,
+                    "student_list": boolean,
+                    "teacher_session": boolean,
+                    "advices": boolean,
                 },
-                "miPerfil": "string"
+                ...
             }
 
     Responses: 

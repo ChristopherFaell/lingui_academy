@@ -1,4 +1,5 @@
 Endpoint o Path: localhost:3000/api/v1/settings
+
 Method: GET 
  
 Header : { 
@@ -6,17 +7,22 @@ Header : {
 } 
  
 RequestData: 
-    CODE/ Query Params
+        Data: json {,
+            "name": "string|min(3)|maxLength(32)", 
+            "lastName": "string|min(3)|maxLength(32)",
+            "document_type": "number"
+            "document_number": "number|min(8)|maxLength(10)"
+            "email": "string|email",
+            "role": number,
+            "contract": number,
+            "workday": number, 
+        } 
  
 Response:  
  
 	Status: 200 (Ok):  
-        Data: json {
-            "crear_usuario": "string",
-            "nombre": "string", 
-            "correo": "string",
-            "tipo_usuario": number,
-            "opciones": number, 
+        Data: { 
+            "message": " Usuario modificado Exitosamente" 
         } 
  
 	Status: 400 (Bad Request):  

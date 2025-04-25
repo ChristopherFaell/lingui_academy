@@ -1,0 +1,41 @@
+Endpoint o Path: localhost:3000/api/v1/settings/:rol=0000
+
+Method: PATCH
+
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
+
+    Request Data: 
+           CODE/ Query Params
+
+    Responses: 
+        Status: 200 (OK): 
+            Data: json { 
+                "view_dashboard": {
+                    "dashboard": boolean
+                },
+                "view_agenda": {
+                    "class": boolean,
+                    "class_session": boolean,
+                    "student_list": boolean,
+                    "teacher_session": boolean,
+                    "advices": boolean,
+                },
+                ...
+            }
+
+         Status: 304 (Not Modified):  
+            Data: { 
+                "message": "No se pudo modificar los permisos" 
+            }
+
+        Status: 400 (Bad Request):  
+            Data: { 
+                "message": "Marcar información en la casilla correspondiente" 
+            } 
+
+        Status: 500 (Internal Server Error): (gestion a nivel global) 
+            Data: { 
+                 "message": "Error en el servidor, intente más tarde" 
+            } 

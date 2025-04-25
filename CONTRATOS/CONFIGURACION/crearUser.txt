@@ -1,6 +1,7 @@
 Endpoint o Path: localhost:3000/api/v1/crear-usuario
 
 Method: POST  
+
 Header: {  
     Authorization: "bearer fake(caracteres del token)"  
 }  

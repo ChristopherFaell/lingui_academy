@@ -1,11 +1,15 @@
 Endpoint o Path: localhost:3000/api/v1/settings
 
 Method: PATCH
+ 
+Header : { 
+    Authorization: "bearer fake(caracteres del token) 
+} 
 
      Request Data: 
             json { 
                 "language": "string",
-                "notificaciones": "string"
+                "notification": "string"
             }
 
     Responses: 
