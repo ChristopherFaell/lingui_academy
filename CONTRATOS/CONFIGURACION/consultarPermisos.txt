@@ -1,3 +1,9 @@
+Descripción:
+Este endpoint PATCH permite actualizar los permisos de visualización de diferentes secciones del sistema según el rol especificado. La solicitud incluye parámetros de consulta (query params) que controlan qué elementos son accesibles, como el dashboard y la agenda. Dependiendo de la respuesta, se indica si la modificación fue exitosa o si hubo un error en la actualización de los permisos.
+
+Explicación técnica:
+Se realiza una actualización de permisos para el rol proporcionado en el endpoint (:rol=0000), permitiendo controlar la visibilidad de diferentes partes de la aplicación. Los cambios son reflejados en un objeto JSON con configuraciones booleanas para cada sección de la interfaz.
+
 Endpoint o Path: localhost:3000/api/v1/settings/:rol=0000
 
 Method: PATCH

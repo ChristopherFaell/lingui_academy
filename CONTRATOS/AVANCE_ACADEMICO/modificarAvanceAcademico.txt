@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH permite modificar el avance de un estudiante, actualizando su nivel, unidad y componente. Se requiere una autenticación válida para acceder al servicio. Si la modificación es exitosa, se devuelve un mensaje confirmando el cambio. En caso de error en la solicitud o problemas con el servidor, se devuelve el mensaje adecuado indicando la causa del fallo.
+
 Endpoint o Path: localhost:3000/api/v1/avance 
 Method: PATCH 
 Header : { 

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST permite crear una nueva clase en el sistema, proporcionando información detallada como el nombre de la sede, aula, modalidad, nivel, unidad, componente, idioma, fechas de inicio y fin, y duración. Todos los campos son requeridos y deben enviarse en formato JSON. La solicitud debe incluir un token de autorización válido en los encabezados. Si la creación es exitosa, se devuelve un mensaje de confirmación. Si hay errores en los datos o en el servidor, se proporcionan respuestas correspondientes con los códigos de estado apropiados.
+
 Endpoint o Path: localhost:3000/api/v1/agenda-create  
 
 Method: POST  

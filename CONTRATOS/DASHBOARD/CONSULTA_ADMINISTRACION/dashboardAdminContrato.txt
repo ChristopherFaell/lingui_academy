@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET proporciona información sobre un contrato, incluyendo el tipo de contrato, el número de estudiantes asociados y el estado del contrato.
+
 Endpoint o Path: localhost:3000/api/v1/dashboard/contract
 Method: GET 
  

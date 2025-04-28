@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH se utiliza para suspender un usuario proporcionando su ID. El sistema responderá con diferentes estados dependiendo de si la solicitud fue exitosa o si ocurrió algún error.
+
 Endpoint o Path: localhost:3000/api/v1/settings
 
 Method: PATCH

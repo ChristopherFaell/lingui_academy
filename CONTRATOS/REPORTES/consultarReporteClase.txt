@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint GET permite obtener un reporte sobre el aula, incluyendo su modalidad, capacidad y número de clases programadas y realizadas.
+
 Endpoint o Path: localhost:3000/api/v1/report/classroom
 Method: GET 
  

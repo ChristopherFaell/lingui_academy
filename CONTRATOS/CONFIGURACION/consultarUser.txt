@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET permite acceder a la configuración del usuario, devolviendo información sobre el nombre, correo electrónico, rol y opciones de configuración del usuario. Se incluyen posibles respuestas de éxito y error, como problemas de acceso o fallos en el servidor, proporcionando mensajes detallados para cada caso.
+
 Endpoint o Path: localhost:3000/api/v1/settings
 Method: GET 
  

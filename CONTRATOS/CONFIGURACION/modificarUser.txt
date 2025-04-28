@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET permite obtener la configuración de un usuario específico, como su nombre, apellido, tipo de documento, correo electrónico, rol, contrato y jornada laboral. El endpoint responde con el estado de la modificación según si la solicitud fue exitosa o si ocurrió algún error.
+
 Endpoint o Path: localhost:3000/api/v1/settings
 
 Method: GET 

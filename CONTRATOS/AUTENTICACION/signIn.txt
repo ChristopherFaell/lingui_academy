@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST permite registrar un nuevo usuario proporcionando su nombre, apellido, correo electrónico, número de teléfono y contraseña, junto con su confirmación. Si el registro es exitoso, el servidor responde con un mensaje de confirmación. Si ya existe un usuario con el mismo correo electrónico o hay un error en los datos proporcionados, se devolverán los mensajes de error correspondientes.
+
 Endpoint o Path: localhost:3000/api/v1/signin 
 Method: POST 
  

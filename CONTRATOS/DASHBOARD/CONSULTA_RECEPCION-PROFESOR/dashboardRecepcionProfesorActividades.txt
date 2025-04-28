@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET recupera información sobre las tareas, proporcionando el nombre, la descripción y la fecha y hora programadas.
+
 Endpoint o Path: localhost:3000/api/v1/dashboard/task
 Method: GET 
  

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST permite la creación de un usuario, proporcionando información como nombre, apellido, tipo de documento, número de documento, correo electrónico, rol, tipo de contrato y jornada laboral. Al ejecutar el request, el sistema devuelve diferentes respuestas según el resultado de la operación, como éxito, error de solicitud o problemas de servidor.
+
 Endpoint o Path: localhost:3000/api/v1/crear-usuario
 
 Method: POST  

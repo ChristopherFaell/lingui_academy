@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET permite consultar el avance de un estudiante en una clase específica, proporcionando su nombre en formato JSON. La respuesta incluye el nivel, unidad, componente y comentarios relacionados con el progreso del estudiante. Si ocurre algún error al consultar el avance, se devolverán mensajes de error correspondientes, como una solicitud incorrecta o problemas del servidor.
+
 Endpoint o Path: localhost:3000/api/v1/avance 
 Method: GET 
 Header : { 

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET permite obtener información detallada sobre una clase específica, utilizando su ID como parámetro en la URL. El servidor responde con datos como la modalidad de la clase, el nivel, el componente, el idioma, las fechas y la duración, entre otros. La solicitud debe incluir un token de autorización en los encabezados. Si la clase no existe o hay un error en la consulta, se proporcionarán respuestas adecuadas con códigos de estado correspondientes.
+
 Endpoint o Path: localhost:3000/api/v1/agenda-information/:id_clase 
 Method: GET 
 Header : { 

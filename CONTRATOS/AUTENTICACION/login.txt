@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST permite realizar el proceso de autenticación de un usuario, enviando el correo electrónico y la contraseña en formato JSON. Si la autenticación es exitosa, el servidor devuelve un token que se usará en futuras solicitudes para validar al usuario, junto con su información personal. En caso de error, se devuelven respuestas con códigos de estado apropiados según el problema encontrado, como un correo o contraseña incorrectos, o problemas del servidor.
+
 Endpoint o Path: localhost:3000/api/v1/auth/login    //Marcar versiones (V1) 
 
 Method: POST 

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET proporciona información detallada sobre la sesión de clases, como el número de sesión, aula, casa, idioma, número de estudiantes, nivel, tipo de clase, fecha y hora, y duración.
+
 Endpoint o Path: localhost:3000/api/v1/dashboard/task
 Method: GET 
  
