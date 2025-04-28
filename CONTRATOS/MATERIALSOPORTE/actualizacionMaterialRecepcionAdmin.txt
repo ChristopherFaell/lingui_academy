@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH se utiliza para modificar un material de apoyo. Se requiere proporcionar el nombre, nivel, descripción y enlace del material.
+
 Endpoint o Path: localhost:3000/api/v1/support-material 
 Method: PATCH 
 Header : { 

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint DELETE permite eliminar una clase agendada especificando su sesión de aula. La solicitud debe incluir un token de autorización válido en los encabezados y el ID de la sesión de aula en formato JSON. Si la clase se elimina con éxito, se devuelve un mensaje de confirmación. En caso de que no se pueda encontrar la clase o haya un error en el proceso, se proporcionan respuestas con los códigos de estado correspondientes.
+
 Endpoint o Path: localhost:3000/api/v1/agenda 
 Method: DELETE 
 Header : { 

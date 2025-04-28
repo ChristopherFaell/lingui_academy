@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint PATCH permite modificar la contraseña del usuario en el perfil.
+
 Endpoint o Path: localhost:3000/api/v1/perfil/:id
 
 Method: PATCH

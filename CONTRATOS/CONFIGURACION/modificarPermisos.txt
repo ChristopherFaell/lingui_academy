@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH se utiliza para modificar los permisos de un rol específico en la aplicación. Los parámetros de configuración de permisos incluyen vistas como el tablero y la agenda, con diferentes opciones como clases, sesiones y lista de estudiantes. El servidor responderá según si la modificación fue exitosa o no.
+
 Endpoint o Path: localhost:3000/api/v1/settings/:rol=0000
 
 Method: PATCH

@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint GET obtiene información sobre el soporte de una clase asignada, mostrando el nombre, idioma, clases asignadas y clases realizadas.
+
 Endpoint o Path: localhost:3000/api/v1/support
 Method: GET 
  

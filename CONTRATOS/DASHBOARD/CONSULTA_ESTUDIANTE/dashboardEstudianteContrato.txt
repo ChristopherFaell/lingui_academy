@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET obtiene la información sobre el contrato, incluyendo las fechas de inicio y fin estimadas, así como las horas mensuales y semanales asignadas al contrato.
+
 Endpoint o Path: localhost:3000/api/v1/dashboard/contract
 Method: GET 
  

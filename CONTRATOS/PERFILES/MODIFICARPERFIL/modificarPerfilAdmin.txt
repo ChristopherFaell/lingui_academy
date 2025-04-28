@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint PATCH permite modificar la información del perfil de usuario, incluyendo su imagen, nombre, apellido, fecha de nacimiento, correo electrónico y número de teléfono.
+
 Endpoint o Path: localhost:3000/api/v1/perfil/:id
 
 Method: PATCH

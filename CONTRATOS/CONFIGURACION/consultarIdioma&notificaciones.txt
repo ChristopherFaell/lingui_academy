@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH permite actualizar la configuración de idioma y notificaciones del usuario. Se realiza a través de parámetros de consulta (query params) en la solicitud. Si la modificación es exitosa, se devuelve la configuración actualizada. Si no es posible realizar los cambios, se devuelve un mensaje indicando que no se pudo modificar. En caso de error o problemas del servidor, se proporciona el mensaje de error correspondiente.
+
 Endpoint o Path: localhost:3000/api/v1/settings
 
 Method: PATCH

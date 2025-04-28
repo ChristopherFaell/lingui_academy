@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint GET genera un reporte de la clase impartida por un maestro, incluyendo información sobre la sesión, como el código de clase, nivel, modalidad y duración.
+
 Endpoint o Path: localhost:3000/api/v1/report/teacher
 Method: GET 
  

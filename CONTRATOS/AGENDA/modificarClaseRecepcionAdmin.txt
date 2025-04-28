@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint PATCH permite modificar los detalles de una clase agendada, como la sede, el aula, modalidad, nivel, unidad, componente, idioma, fechas y duración. La solicitud debe incluir un token de autorización válido en los encabezados y los nuevos datos de la clase en formato JSON. Si la clase se modifica con éxito, se devuelve un mensaje de confirmación. Si ocurre algún error, se proporcionan respuestas correspondientes con los códigos de estado adecuados.
+
 Endpoint o Path: localhost:3000/api/v1/agenda 
 Method: PATCH 
 Header : { 

@@ -1,3 +1,8 @@
+Descripción:
+/api/v1/restore: Este endpoint POST permite iniciar el proceso de restauración de contraseña, enviando un correo electrónico en formato JSON. Si el correo está registrado, se enviará un mensaje de restauración. En caso contrario, se muestra un error. Otros errores incluyen problemas del servidor.
+
+/api/v1/restore-password: Este endpoint POST permite al usuario restablecer su contraseña proporcionando la nueva contraseña y su confirmación. Si las contraseñas coinciden, se actualiza correctamente. Si no coinciden o hay errores en el proceso, se devuelve un mensaje correspondiente.
+
 Endpoint o Path: localhost:3000/api/v1/restore 
 Method: POST 
  

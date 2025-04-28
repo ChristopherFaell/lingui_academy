@@ -1,3 +1,6 @@
+Endpoint Descripción:
+Este endpoint GET permite obtener un reporte detallado sobre un estudiante específico, proporcionando información sobre su nombre, nivel, idioma, estado, clases inscritas, asistencia y horas de clase.
+
 Endpoint o Path: localhost:3000/api/v1/report/student 
 Method: GET 
  

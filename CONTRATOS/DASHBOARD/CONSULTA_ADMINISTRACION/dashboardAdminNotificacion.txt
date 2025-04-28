@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint GET obtiene información sobre una notificación, incluyendo el tipo de notificación y el mensaje asociado.
+
 Endpoint o Path: localhost:3000/api/v1/dashboard/notification
 Method: GET 
  

@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint DELETE se utiliza para eliminar un material de apoyo proporcionado por su nombre, nivel, descripción y enlace.
+
 Endpoint o Path: localhost:3000/api/v1/support-material 
 Method: DELETE 
 Header : { 

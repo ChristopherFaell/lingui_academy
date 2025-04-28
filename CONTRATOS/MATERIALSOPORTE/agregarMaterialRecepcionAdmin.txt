@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST se utiliza para agregar un nuevo material de apoyo. Se requiere proporcionar los siguientes datos: nombre, nivel, descripción y enlace.
+
 Endpoint o Path: localhost:3000/api/v1/support-material 
 Method: POST 
 Header : { 

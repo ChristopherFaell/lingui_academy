@@ -1,3 +1,6 @@
+Descripción:
+Este endpoint POST permite agendar una clase para un estudiante específico. El usuario debe enviar los datos del estudiante y la sesión de clase en formato JSON. La solicitud debe incluir un token de autorización válido en los encabezados para autenticar al usuario. Dependiendo de la respuesta del servidor, se retornarán diferentes códigos de estado que indican el éxito o los errores en el proceso de agendado.
+
 Endpoint o Path: localhost:3000/api/v1/agenda 
 
 Method: POST 
